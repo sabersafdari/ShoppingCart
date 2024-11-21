@@ -1,0 +1,96 @@
+@import "_bootstrap.min";
+@import "_font";
+
+html, body {
+    background-color: lightgray;
+}
+
+#basket {
+    position: relative;
+
+    .item-icon {
+        position: relative;
+        z-index: 5;
+    }
+
+    .qty {
+        position: absolute;
+        z-index: 10;
+        display: block;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        line-height: 14px;
+        font-size: 10px;
+        border-radius: 50%;
+        background-color: #dc3545;
+        color: #fff;
+        top: 10px;
+        right: 1px;
+    }
+}
+
+.card-custom-1, .card-custom-2, .card-custom-3 {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgba(#000, 0.1);
+
+    .img-container {
+        display: block;
+        height: 250px;
+
+        .item-icon {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        padding: 15px;
+
+        .title {
+            font-size: 17px;
+            color: black;
+            text-decoration: none !important;
+        }
+
+        .lead {
+            font-size: 15px;
+            color: gray;
+        }
+
+        .footer {
+            border-top: 1px solid rgba(#000, .05);
+            padding-top: 15px;
+
+            .price {
+                font-size: 17px;
+                color: green;
+                text-decoration: none !important;
+            }
+        }
+    }
+}
+
+.card-custom-2 {
+    .img-container {
+        height: auto;
+    }
+
+    .footer {
+        margin: 10px 0;
+        border-bottom: 1px solid rgba(#000, .05);
+        padding-bottom: 15px;
+    }
+}
+
+.card-custom-3 {
+    padding: 15px;
+}
+
+.title-custom-1 {
+    font-size: 17px;
+}
